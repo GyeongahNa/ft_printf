@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include "ft_printf.h"
 
-int		**unsigned_flags_infos(char *str)
+int	**unsigned_flags_infos(char *str)
 {
 	int **flags_infos;
 	int i;
@@ -32,8 +32,7 @@ int		**unsigned_flags_infos(char *str)
 	return (flags_infos);
 }
 
-int		**unsigned_format_specifier_infos(
-		char *str, int asterisk_width, int asterisk_precision)
+int	**unsigned_format_specifier_infos(char *str, int asterisk_width, int asterisk_precision)
 {
 	int **infos;
 	int **tmp;
