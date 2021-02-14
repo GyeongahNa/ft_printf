@@ -28,8 +28,7 @@ int		get_hex_mem_size_for_unsigned_longlong(unsigned long long int num)
 	return (size + 1);
 }
 
-char	*fill_hex_memory_for_unsigned_longlong(int size,
-		unsigned long long int num)
+char	*fill_hex_memory_for_unsigned_longlong(int size, unsigned long long int num)
 {
 	char *result;
 
@@ -58,12 +57,11 @@ char	*fill_hex_memory_for_unsigned_longlong(int size,
 	return (result);
 }
 
-char	*change_to_hexadecimal_for_unsigned_longlong(unsigned
-		long long num)
+char	*change_to_hexadecimal_for_unsigned_longlong(unsigned long long num)
 {
-	int		size;
+	int	size;
 	char	*result;
-	int		i;
+	int	i;
 
 	i = 0;
 	if (num == 0)
