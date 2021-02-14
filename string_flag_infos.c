@@ -32,10 +32,10 @@ int		**str_flags_infos(char *str)
 
 int		str_precision_infos(char *str, int i, int asterisk_precision)
 {
-	int		precision;
-	int		check;
+	int	precision;
+	int	check;
 	char	*tmp;
-	int		j;
+	int	j;
 
 	check = 0;
 	if (str[i] == '.')
