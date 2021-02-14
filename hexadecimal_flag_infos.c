@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include "ft_printf.h"
 
-int		**hex_flags_infos(char *str)
+int	**hex_flags_infos(char *str)
 {
 	int **flags_infos;
 	int i;
@@ -34,8 +34,7 @@ int		**hex_flags_infos(char *str)
 	return (flags_infos);
 }
 
-int		**hex_format_specifier_infos(char *str,
-		int asterisk_width, int asterisk_precision)
+int	**hex_format_specifier_infos(char *str, int asterisk_width, int asterisk_precision)
 {
 	int **infos;
 	int **tmp;
