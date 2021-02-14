@@ -15,7 +15,7 @@
 int		width_asterisk_check(char *str, va_list ap)
 {
 	int	i;
-	int width;
+	int	width;
 
 	i = 0;
 	while (str[i] == '%')
