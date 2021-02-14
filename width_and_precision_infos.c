@@ -13,11 +13,11 @@
 #include <stdlib.h>
 #include "ft_printf.h"
 
-int		**width_infos(char *str, int i, int asterisk_width)
+int	**width_infos(char *str, int i, int asterisk_width)
 {
-	int		**width_infos;
+	int	**width_infos;
 	char	*tmp;
-	int		j;
+	int	j;
 
 	width_infos = set_double(3);
 	if (str[i] == '*')
@@ -38,7 +38,7 @@ int		**width_infos(char *str, int i, int asterisk_width)
 	return (width_infos);
 }
 
-int		check_precision(char *str, int i)
+int	check_precision(char *str, int i)
 {
 	int check;
 
@@ -48,12 +48,12 @@ int		check_precision(char *str, int i)
 	return (check);
 }
 
-int		precision_infos(char *str, int i, int asterisk_precision)
+int	precision_infos(char *str, int i, int asterisk_precision)
 {
-	int		precision;
-	int		check;
+	int	precision;
+	int	check;
 	char	*tmp;
-	int		j;
+	int	j;
 
 	check = 0;
 	if (str[i] == '.')
