@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include "ft_printf.h"
 
-int		**set_double(int size)
+int	**set_double(int size)
 {
 	int **double_ptr;
 	int i;
