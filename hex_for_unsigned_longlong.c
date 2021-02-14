@@ -15,7 +15,7 @@
 #include <limits.h>
 #include <stdio.h>
 
-int		get_hex_mem_size_for_unsigned_longlong(unsigned long long int num)
+int	get_hex_mem_size_for_unsigned_longlong(unsigned long long int num)
 {
 	int size;
 
