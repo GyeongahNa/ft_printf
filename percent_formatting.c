@@ -34,7 +34,7 @@ char	*set_percent_result(char *s, int **infos)
 
 char	*formatting_percent(char *str, int asterisk_width)
 {
-	int		**infos;
+	int	**infos;
 	char	*s;
 	char	*tmp;
 
