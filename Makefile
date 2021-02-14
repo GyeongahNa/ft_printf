@@ -15,6 +15,7 @@ SRC = align.c asterisk_check.c character_formatting.c decimal_flag_infos.c \
 	  octal_formatting.c pass_width_precision.c pointer_formatting.c sanity_check.c string_flag_infos.c \
 	  string_formatting.c unsigned_int_flag_infos.c unsigned_int_formatting.c width_and_precision_infos.c \
 	  hexadecimal_formatting2.c numeric_conversion2.c examine_percent.c percent_formatting.c percent_flag_infos.c
+	  
 OBJ = $(subst .c,.o,$(SRC))
 
 
