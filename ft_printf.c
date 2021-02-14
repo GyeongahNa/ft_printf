@@ -20,7 +20,7 @@
 char	*get_format_specifier(char *str)
 {
 	char	*tmp;
-	int		i;
+	int	i;
 
 	tmp = (char *)malloc(sizeof(char) * (ft_strlen(str) + 1));
 	i = 0;
@@ -36,7 +36,7 @@ char	*get_format_specifier(char *str)
 	return (tmp);
 }
 
-int		print_conversioned(char *str, int width, int precision, va_list ap)
+int	print_conversioned(char *str, int width, int precision, va_list ap)
 {
 	char	*tmp;
 
@@ -64,10 +64,10 @@ int		print_conversioned(char *str, int width, int precision, va_list ap)
 	return (ft_putstr(tmp));
 }
 
-int		*print_character(char *str, int i, int num, va_list ap)
+int	*print_character(char *str, int i, int num, va_list ap)
 {
 	char	*tmp;
-	int		*result;
+	int	*result;
 
 	result = (int *)malloc(sizeof(int) * 2);
 	if (str[i] != '%')
@@ -88,7 +88,7 @@ int		*print_character(char *str, int i, int num, va_list ap)
 	return (result);
 }
 
-int		ft_printf(char *str, ...)
+int	ft_printf(char *str, ...)
 {
 	va_list	ap;
 	int		i;
