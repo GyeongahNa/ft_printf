@@ -15,7 +15,7 @@
 #include "ft_printf.h"
 #include "limits.h"
 
-int		get_size_for_unsigned_longlong(unsigned long long num)
+int	get_size_for_unsigned_longlong(unsigned long long num)
 {
 	int malloc_size;
 
