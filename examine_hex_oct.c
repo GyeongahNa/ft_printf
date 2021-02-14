@@ -14,7 +14,7 @@
 #include "ft_printf.h"
 #include <stdio.h>
 
-int		pass_oct_hex_flags(const char *str)
+int	pass_oct_hex_flags(const char *str)
 {
 	int i;
 
@@ -24,7 +24,7 @@ int		pass_oct_hex_flags(const char *str)
 	return (i);
 }
 
-int		oct_final(const char *str, int i)
+int	oct_final(const char *str, int i)
 {
 	if (ft_strcmp(str + i, "lo") == 0 || ft_strcmp(str + i, "llo") == 0 ||
 			ft_strcmp(str + i, "hho") == 0 || ft_strcmp(str + i, "ho") == 0 ||
@@ -34,7 +34,7 @@ int		oct_final(const char *str, int i)
 		return (-1);
 }
 
-int		hex_final(const char *str, int i)
+int	hex_final(const char *str, int i)
 {
 	if (ft_strcmp(str + i, "lx") == 0 || ft_strcmp(str + i, "llx") == 0 ||
 			ft_strcmp(str + i, "hhx") == 0 || ft_strcmp(str + i, "hx") == 0 ||
@@ -48,7 +48,7 @@ int		hex_final(const char *str, int i)
 		return (-1);
 }
 
-int		examine_oct(const char *str)
+int	examine_oct(const char *str)
 {
 	int idx;
 	int width_check;
@@ -76,7 +76,7 @@ int		examine_oct(const char *str)
 	return (oct_final(str, idx));
 }
 
-int		examine_hex(const char *str)
+int	examine_hex(const char *str)
 {
 	int idx;
 	int width_check;
