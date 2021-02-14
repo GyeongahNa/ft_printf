@@ -89,7 +89,7 @@ char	*set_decimal_result(char *s, int **infos, long long dec)
 char	*formatting_decimal(char *str, int asterisk_width,
 		int asterisk_precision, long long dec)
 {
-	int		**infos;
+	int	**infos;
 	char	*s;
 	char	*tmp;
 
