@@ -50,10 +50,9 @@ char	*set_oct_result(char *s, int **infos)
 	return (result);
 }
 
-char	*formatting_octal(char *str,
-		int asterisk_width, int asterisk_precision, unsigned long long dec)
+char	*formatting_octal(char *str, int asterisk_width, int asterisk_precision, unsigned long long dec)
 {
-	int		**infos;
+	int	**infos;
 	char	*s;
 	char	*tmp;
 
