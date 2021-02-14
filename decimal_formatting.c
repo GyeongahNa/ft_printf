@@ -48,7 +48,7 @@ char	*align_to_right_append_sign(char *s, int width, long long dec)
 {
 	char	*result;
 	char	*itoa;
-	int		i;
+	int	i;
 
 	result = malloc(sizeof(char) * (width + 1));
 	result[0] = s[0];
