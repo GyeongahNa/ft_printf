@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include "ft_printf.h"
 
-int		pass_decimal_flags(const char *str)
+int	pass_decimal_flags(const char *str)
 {
 	int i;
 
@@ -23,7 +23,7 @@ int		pass_decimal_flags(const char *str)
 	return (i);
 }
 
-int		decimal_final(const char *str, int i)
+int	decimal_final(const char *str, int i)
 {
 	if (ft_strcmp(str + i, "ld") == 0 || ft_strcmp(str + i, "lld") == 0 ||
 			ft_strcmp(str + i, "hhd") == 0 || ft_strcmp(str + i, "hd") == 0 ||
@@ -37,7 +37,7 @@ int		decimal_final(const char *str, int i)
 		return (-1);
 }
 
-int		examine_decimal(const char *str)
+int	examine_decimal(const char *str)
 {
 	int idx;
 	int width_check;
