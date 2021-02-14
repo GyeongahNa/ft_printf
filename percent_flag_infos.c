@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include "ft_printf.h"
 
-int		**percent_flags_infos(char *str)
+int	**percent_flags_infos(char *str)
 {
 	int **flags_infos;
 	int i;
@@ -32,7 +32,7 @@ int		**percent_flags_infos(char *str)
 	return (flags_infos);
 }
 
-int		**percent_format_specifier_infos(char *str, int asterisk_width)
+int	**percent_format_specifier_infos(char *str, int asterisk_width)
 {
 	int **infos;
 	int **tmp;
