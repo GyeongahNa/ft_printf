@@ -15,7 +15,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int		**pass_width(const char *str, int i)
+int	**pass_width(const char *str, int i)
 {
 	int width_check;
 	int **tmp;
@@ -40,7 +40,7 @@ int		**pass_width(const char *str, int i)
 	return (tmp);
 }
 
-int		**pass_dot(const char *str, int i)
+int	**pass_dot(const char *str, int i)
 {
 	int dot_check;
 	int **tmp;
@@ -65,7 +65,7 @@ int		**pass_dot(const char *str, int i)
 	return (tmp);
 }
 
-int		**pass_precision(const char *str, int i, int dot_check)
+int	**pass_precision(const char *str, int i, int dot_check)
 {
 	int precision_check;
 	int **tmp;
