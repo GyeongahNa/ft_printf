@@ -35,7 +35,7 @@ char	*set_unsigned_result(char *s, int **infos)
 char	*formatting_unsigned(char *str, int asterisk_width,
 		int asterisk_precision, unsigned long long dec)
 {
-	int		**infos;
+	int	**infos;
 	char	*s;
 	char	*tmp;
 
