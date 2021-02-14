@@ -14,7 +14,7 @@
 #include "ft_printf.h"
 #include <stdio.h>
 
-int		examine_format_specifier(const char *tmp)
+int	examine_format_specifier(const char *tmp)
 {
 	if (last_chr(tmp, '%') == 1)
 		return (examine_percent(tmp));
@@ -39,7 +39,7 @@ int		examine_format_specifier(const char *tmp)
 	return (-1);
 }
 
-int		specifier_check(char c)
+int	specifier_check(char c)
 {
 	if (c != '%' && c != 'd' && c != 'i' && c != 'u' && c != 'o' && c != 'x'
 			&& c != 'X' && c != 'c' && c != 'p' && c != 's' && c != '\0')
@@ -48,7 +48,7 @@ int		specifier_check(char c)
 		return (0);
 }
 
-int		str_check(const char *str, char *tmp)
+int	str_check(const char *str, char *tmp)
 {
 	int i;
 	int j;
@@ -74,10 +74,10 @@ int		str_check(const char *str, char *tmp)
 	return (1);
 }
 
-int		sanity_check(const char *str)
+int	sanity_check(const char *str)
 {
 	char	*tmp;
-	int		result;
+	int	result;
 
 	if (str == 0)
 		return (-1);
