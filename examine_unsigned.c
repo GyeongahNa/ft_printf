@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include "ft_printf.h"
 
-int		pass_unsigned_flags(const char *str)
+int	pass_unsigned_flags(const char *str)
 {
 	int i;
 
@@ -23,7 +23,7 @@ int		pass_unsigned_flags(const char *str)
 	return (i);
 }
 
-int		unsigned_final(const char *str, int i)
+int	unsigned_final(const char *str, int i)
 {
 	if (ft_strcmp(str + i, "lu") == 0 || ft_strcmp(str + i, "llu") == 0 ||
 			ft_strcmp(str + i, "hhu") == 0 || ft_strcmp(str + i, "hu") == 0 ||
@@ -33,7 +33,7 @@ int		unsigned_final(const char *str, int i)
 		return (-1);
 }
 
-int		examine_unsigned(const char *str)
+int	examine_unsigned(const char *str)
 {
 	int idx;
 	int width_check;
