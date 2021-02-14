@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include "ft_printf.h"
 
-int		pass_percent_flags(const char *str)
+int	pass_percent_flags(const char *str)
 {
 	int i;
 
@@ -23,7 +23,7 @@ int		pass_percent_flags(const char *str)
 	return (i);
 }
 
-int		percent_final(const char *str, int i)
+int	percent_final(const char *str, int i)
 {
 	if (ft_strcmp(str + i, "%") == 0)
 		return (1);
@@ -31,7 +31,7 @@ int		percent_final(const char *str, int i)
 		return (-1);
 }
 
-int		examine_percent(const char *str)
+int	examine_percent(const char *str)
 {
 	int idx;
 	int width_check;
