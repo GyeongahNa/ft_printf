@@ -14,7 +14,7 @@
 #include "ft_printf.h"
 #include <unistd.h>
 
-int		**str_flags_infos(char *str)
+int	**str_flags_infos(char *str)
 {
 	int **flags_infos;
 	int i;
@@ -30,7 +30,7 @@ int		**str_flags_infos(char *str)
 	return (flags_infos);
 }
 
-int		str_precision_infos(char *str, int i, int asterisk_precision)
+int	str_precision_infos(char *str, int i, int asterisk_precision)
 {
 	int	precision;
 	int	check;
@@ -58,8 +58,7 @@ int		str_precision_infos(char *str, int i, int asterisk_precision)
 	return (precision);
 }
 
-int		**str_format_specifier_infos(
-		char *str, int asterisk_width, int asterisk_precision)
+int	**str_format_specifier_infos(char *str, int asterisk_width, int asterisk_precision)
 {
 	int **infos;
 	int **tmp;
