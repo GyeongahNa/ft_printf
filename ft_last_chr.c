@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int		last_chr(const char *str, char c)
+int	last_chr(const char *str, char c)
 {
 	int len;
 
