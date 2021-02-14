@@ -13,8 +13,7 @@
 #include "ft_printf.h"
 #include <stdlib.h>
 
-int		**check_minus_width(
-		char *str, int asterisk_width, int asterisk_precision)
+int	**check_minus_width(char *str, int asterisk_width, int asterisk_precision)
 {
 	int **infos;
 
@@ -27,13 +26,12 @@ int		**check_minus_width(
 	return (infos);
 }
 
-char	*formatting_small_hexadecimal(char *str, int asterisk_width,
-		int asterisk_precision, unsigned long long dec)
+char	*formatting_small_hexadecimal(char *str, int asterisk_width, int asterisk_precision, unsigned long long dec)
 {
-	int		**infos;
+	int	**infos;
 	char	*s;
 	char	*tmp;
-	int		large_hex;
+	int	large_hex;
 
 	large_hex = 0;
 	infos = check_minus_width(str, asterisk_width, asterisk_precision);
@@ -56,13 +54,12 @@ char	*formatting_small_hexadecimal(char *str, int asterisk_width,
 	return (s);
 }
 
-char	*formatting_large_hexadecimal(char *str, int asterisk_width,
-		int asterisk_precision, unsigned long long dec)
+char	*formatting_large_hexadecimal(char *str, int asterisk_width, int asterisk_precision, unsigned long long dec)
 {
-	int		**infos;
+	int	**infos;
 	char	*s;
 	char	*tmp;
-	int		large_hex;
+	int	large_hex;
 
 	large_hex = 1;
 	infos = check_minus_width(str, asterisk_width, asterisk_precision);
