@@ -14,7 +14,7 @@
 #include "ft_printf.h"
 #include <unistd.h>
 
-int		**ptr_flags_infos(char *str)
+int	**ptr_flags_infos(char *str)
 {
 	int **flags_infos;
 	int i;
@@ -30,8 +30,7 @@ int		**ptr_flags_infos(char *str)
 	return (flags_infos);
 }
 
-int		**ptr_format_specifier_infos(
-		char *str, int asterisk_width, int asterisk_precision)
+int	**ptr_format_specifier_infos(char *str, int asterisk_width, int asterisk_precision)
 {
 	int **infos;
 	int **tmp;
@@ -101,10 +100,9 @@ char	*process_null(int **infos)
 	return (s);
 }
 
-char	*format_ptr(
-		char *str, int asterisk_width, int precision_width, unsigned long ptr)
+char	*format_ptr(char *str, int asterisk_width, int precision_width, unsigned long ptr)
 {
-	int		**infos;
+	int	**infos;
 	char	*s;
 	char	*tmp;
 
