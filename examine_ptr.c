@@ -14,7 +14,7 @@
 #include "ft_printf.h"
 #include <stdio.h>
 
-int		pass_ptr_flags(const char *str)
+int	pass_ptr_flags(const char *str)
 {
 	int i;
 
@@ -24,7 +24,7 @@ int		pass_ptr_flags(const char *str)
 	return (i);
 }
 
-int		ptr_final(const char *str, int i)
+int	ptr_final(const char *str, int i)
 {
 	if (ft_strcmp(str + i, "p") == 0)
 		return (1);
@@ -32,7 +32,7 @@ int		ptr_final(const char *str, int i)
 		return (-1);
 }
 
-int		examine_ptr(const char *str)
+int	examine_ptr(const char *str)
 {
 	int idx;
 	int width_check;
