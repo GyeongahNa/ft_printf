@@ -33,7 +33,7 @@ int		get_size_for_unsigned_longlong(unsigned long long num)
 char	*ft_itoa_for_unsigned_longlong(unsigned long long int num)
 {
 	char	*s;
-	int		size;
+	int	size;
 
 	size = get_size_for_unsigned_longlong(num);
 	if (!(s = (char *)malloc(sizeof(char) * size)))
