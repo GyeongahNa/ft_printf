@@ -50,8 +50,7 @@ char	*str_null(void)
 	return (tmp);
 }
 
-int		**check_width_minus_str(
-		char *format, int asterisk_width, int asterisk_precision)
+int	**check_width_minus_str(char *format, int asterisk_width, int asterisk_precision)
 {
 	int		**infos;
 
@@ -65,8 +64,7 @@ int		**check_width_minus_str(
 	return (infos);
 }
 
-char	*formatting_string(
-		char *format, int asterisk_width, int asterisk_precision, char *str)
+char	*formatting_string(char *format, int asterisk_width, int asterisk_precision, char *str)
 {
 	int		**infos;
 	char	*s;
