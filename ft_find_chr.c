@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_find_chr(char *str, char c)
+int	ft_find_chr(char *str, char c)
 {
 	int i;
 
