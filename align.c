@@ -16,7 +16,7 @@
 char	*append_front(char *str, char c, int num)
 {
 	char	*s;
-	int		i;
+	int	i;
 
 	s = malloc(sizeof(char) * (ft_strlen(str) + num + 1));
 	i = 0;
@@ -29,7 +29,7 @@ char	*append_front(char *str, char c, int num)
 
 char	*append_leading_zero(char *s, int precision)
 {
-	char *tmp;
+	char	*tmp;
 
 	if (ft_strcmp(s, "0") == 0 && precision == 0)
 	{
@@ -47,7 +47,7 @@ char	*append_leading_zero(char *s, int precision)
 char	*align_to_left(char *s, int width)
 {
 	char	*result;
-	int		i;
+	int	i;
 
 	result = malloc(sizeof(char) * (width + 1));
 	ft_strcpy(result, s);
