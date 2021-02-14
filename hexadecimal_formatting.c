@@ -13,8 +13,7 @@
 #include <stdlib.h>
 #include "ft_printf.h"
 
-char	*append_ox(char *s, int **infos, unsigned long long dec,
-		int large_hex)
+char	*append_ox(char *s, int **infos, unsigned long long dec, int large_hex)
 {
 	char *tmp1;
 	char *tmp2;
@@ -38,8 +37,8 @@ char	*append_ox(char *s, int **infos, unsigned long long dec,
 char	*align_to_right_append_ox(char *s, int width)
 {
 	char	*result;
-	int		i;
-	int		j;
+	int	i;
+	int	j;
 
 	result = malloc(sizeof(char) * (width + 1));
 	result[width] = '\0';
@@ -89,7 +88,7 @@ char	*set_hex_result(char *s, int **infos)
 char	*check_large_hex(char *str, int large_hex)
 {
 	char	*tmp;
-	int		i;
+	int	i;
 
 	tmp = ft_strdup(str);
 	if (large_hex == 1)
