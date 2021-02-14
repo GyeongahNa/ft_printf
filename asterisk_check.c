@@ -12,7 +12,7 @@
 
 #include <stdarg.h>
 
-int		width_asterisk_check(char *str, va_list ap)
+int	width_asterisk_check(char *str, va_list ap)
 {
 	int	i;
 	int	width;
@@ -31,7 +31,7 @@ int		width_asterisk_check(char *str, va_list ap)
 	return (0);
 }
 
-int		precision_asterisk_check(char *str, va_list ap)
+int	precision_asterisk_check(char *str, va_list ap)
 {
 	int i;
 	int precision;
