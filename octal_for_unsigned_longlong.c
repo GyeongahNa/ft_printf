@@ -14,7 +14,7 @@
 #include "ft_printf.h"
 #include <limits.h>
 
-int		get_oct_mem_size_for_unsigned_longlong(unsigned long long int num)
+int	get_oct_mem_size_for_unsigned_longlong(unsigned long long int num)
 {
 	int size;
 
